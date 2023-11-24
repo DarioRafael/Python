@@ -18,3 +18,7 @@ print(lista)
 lista2 = [1,2,"Pato",True,False,"Pato", 'B']
 
 print(lista2)
+
+lista2.append("Bestia")
+
+print(lista2)
