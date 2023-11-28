@@ -1,4 +1,5 @@
 import random
+
 numeroUsuario = int(input("Ingrese un numero: "))
 numeroRandom = random.randint(1, 100)
 
