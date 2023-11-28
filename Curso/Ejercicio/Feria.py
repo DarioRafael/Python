@@ -1,6 +1,6 @@
-hijoDueño = input("¿Eres el dueño del hijo?: y/n ")
+hijoDueno = input("¿Eres el dueño del hijo?: y/n ")
 
-if hijoDueño == 'y':
+if hijoDueno == 'y':
     print("Puedes entrar")
 else:
     edad = int(input("¿Cuál es tu edad?: "))
@@ -9,9 +9,3 @@ else:
         print("Puedes entrar")
     else:
         print("No puedes entrar")
-
-
-
-
-
-
