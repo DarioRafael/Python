@@ -108,13 +108,12 @@ while running:
                 current_piece.move(-1, 0)
             elif event.key == pygame.K_RIGHT and not check_collision(current_piece, dx=1):
                 current_piece.move(1, 0)
-            elif event.key == pygame.K_DOWN:
-                # Permitir que la pieza caiga automáticamente hacia abajo
-                while not check_collision(current_piece, dy=1):
-                    current_piece.move(0, 1)
-
             elif event.key == pygame.K_UP and not check_collision(current_piece):
                 current_piece.rotate()
+
+    # Permitir que la pieza caiga automáticamente hacia abajo
+    while not check_collision(current_piece, dy=1):
+        current_piece.move(0, 1)
 
     # Movimiento automático hacia abajo
     fall_time += clock.get_rawtime()
